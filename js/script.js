@@ -1,4 +1,4 @@
-let dialogues = [
+allet dialogues = [
     { speaker: "Demonio", text: "¿Por qué me has invocado?" },
     { speaker: "David", text: "Te he invocado para hacerte una petición." },
     { speaker: "Demonio", text: "¿Cuál es tu petición?" },
@@ -85,7 +85,7 @@ document.querySelector(".accept").addEventListener("click", () => {
     buttons.style.pointerEvents = "none"; 
     buttons.style.height = "0"; 
     buttonSound.play(); 
-    finalMessage.textContent = "El demonio ha tomado tu alma. ¡Gracias por el sacrificio!";
+    finalMessage.textContent = "El demonio ha tomado el alma de David...";
     finalMessage.style.display = "block";
 });
 
