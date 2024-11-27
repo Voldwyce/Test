@@ -97,3 +97,25 @@ document.querySelector(".reject").addEventListener("click", () => {
     finalMessage.textContent = "David está triste...";
     finalMessage.style.display = "block";
 });
+
+// Configuración de partículas
+particlesJS("particles-js", {
+    particles: {
+        number: { value: 50, density: { enable: true, value_area: 800 } },
+        color: { value: "#ff0000" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3, random: true },
+        line_linked: { enable: false },
+        move: { enable: true, speed: 2, random: true },
+    },
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+        },
+    },
+    retina_detect: true,
+});
