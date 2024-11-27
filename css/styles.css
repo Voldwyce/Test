@@ -1,0 +1,120 @@
+/* Estilo general */
+body {
+    margin: 0;
+    background-color: #4a4a4a;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#demonGif, #demonImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+#dialogueContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dialogue {
+    margin-top: 20px;
+    position: relative;
+}
+
+#dialogueText {
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#triangleIndicator {
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    animation: bounce 1s infinite;
+}
+
+/* Botones */
+.pixelButton {
+    width: 100%;
+    max-width: 150px;
+    margin: 10px;
+    padding: 10px 0;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9em;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    border: 2px solid white;
+}
+
+.pixelButton.accept:hover {
+    background-color: green;
+    color: white;
+}
+
+.pixelButton.reject:hover {
+    background-color: red;
+    color: white;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Animación del triángulo */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    #dialogueText {
+        font-size: 0.9em;
+    }
+
+    .pixelButton {
+        font-size: 0.8em;
+        padding: 8px 0;
+    }
+}
